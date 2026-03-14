@@ -1,5 +1,5 @@
 export const profile = {
-  name: "川畑 大輝",
+  name: "川畑\u00A0大輝",
   nameEn: "Daiki Kawabata",
   title: "AI活用エンジニア / Webシステム開発",
   titleShort: "Engineer & Creator",

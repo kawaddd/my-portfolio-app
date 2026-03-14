@@ -269,10 +269,11 @@ function ProjectModal({ project, onClose }: { project: Project; onClose: () => v
       animate={{ opacity: 1 }}
       exit={{ opacity: 0 }}
       transition={{ duration: 0.2 }}
-      className="fixed inset-0 z-50 flex items-end justify-center p-0 sm:items-center sm:p-6"
+      style={{ position: "fixed", top: 0, left: 0, right: 0, bottom: 0, zIndex: 9000, display: "flex", alignItems: "flex-end", justifyContent: "center" }}
+      className="sm:items-center sm:p-6"
       onClick={onClose}
     >
-      <div className="absolute inset-0 bg-black/75 backdrop-blur-2xl" />
+      <div style={{ position: "absolute", inset: 0 }} className="bg-black/75 backdrop-blur-2xl" />
 
       <motion.div
         initial={{ opacity: 0, y: 40, scale: 0.97 }}
