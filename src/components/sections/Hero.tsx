@@ -144,7 +144,7 @@ export function Hero() {
         >
           <span className="h-px w-16 bg-gradient-to-r from-transparent to-white/15 sm:w-28" />
           <div className="flex items-center gap-3">
-            <span className="text-sm font-semibold tracking-widest text-white/80">
+            <span className="whitespace-nowrap text-sm font-semibold tracking-widest text-white/80">
               {profile.name}
             </span>
             <span className="h-3.5 w-px bg-white/15" />
