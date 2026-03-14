@@ -1,6 +1,7 @@
 "use client";
 
 import { useState, useEffect } from "react";
+import { createPortal } from "react-dom";
 import { motion, AnimatePresence } from "framer-motion";
 import {
   ArrowUpRight, X, ExternalLink,
@@ -396,8 +397,11 @@ function ProjectModal({ project, onClose }: { project: Project; onClose: () => v
 /* ── Section ── */
 export function Works() {
   const [selected, setSelected] = useState<Project | null>(null);
+  const [mounted, setMounted] = useState(false);
   const featured = projects.filter((p) => p.featured);
   const others = projects.filter((p) => !p.featured);
+
+  useEffect(() => { setMounted(true); }, []);
 
   /* モーダル開閉時にbodyスクロールをロック */
   useEffect(() => {
@@ -458,9 +462,13 @@ export function Works() {
         </AnimatedSection>
       </div>
 
-      <AnimatePresence>
-        {selected && <ProjectModal project={selected} onClose={() => setSelected(null)} />}
-      </AnimatePresence>
+      {/* モーダルはportalでbody直下にレンダリング（fixed positioningの制約を回避） */}
+      {mounted && createPortal(
+        <AnimatePresence>
+          {selected && <ProjectModal project={selected} onClose={() => setSelected(null)} />}
+        </AnimatePresence>,
+        document.body
+      )}
     </section>
   );
 }
