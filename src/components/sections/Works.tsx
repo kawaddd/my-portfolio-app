@@ -279,7 +279,7 @@ function ProjectModal({ project, onClose }: { project: Project; onClose: () => v
         animate={{ opacity: 1, y: 0, scale: 1 }}
         exit={{ opacity: 0, y: 40, scale: 0.97 }}
         transition={{ duration: 0.38, ease: [0.19, 1, 0.22, 1] }}
-        className="relative z-10 flex h-[92svh] w-full max-w-2xl flex-col rounded-t-3xl border border-white/[0.09] bg-[#0d0f1a] shadow-2xl sm:h-auto sm:max-h-[90svh] sm:rounded-3xl"
+        className="relative z-10 flex h-[90vh] w-full max-w-2xl flex-col rounded-t-3xl border border-white/[0.09] bg-[#0d0f1a] shadow-2xl sm:h-auto sm:max-h-[90vh] sm:rounded-3xl"
         onClick={(e) => e.stopPropagation()}
       >
         {/* ドラッグハンドル (モバイルのみ) */}
@@ -403,10 +403,15 @@ export function Works() {
 
   useEffect(() => { setMounted(true); }, []);
 
-  /* モーダル開閉時にbodyスクロールをロック */
+  /* モーダル開閉時にスクロールをロック（iOS Safari対応: html要素に適用） */
   useEffect(() => {
-    document.body.style.overflow = selected ? "hidden" : "";
-    return () => { document.body.style.overflow = ""; };
+    const el = document.documentElement;
+    if (selected) {
+      el.style.overflow = "hidden";
+    } else {
+      el.style.overflow = "";
+    }
+    return () => { el.style.overflow = ""; };
   }, [selected]);
 
   return (

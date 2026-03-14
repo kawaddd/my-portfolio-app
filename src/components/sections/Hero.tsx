@@ -140,19 +140,19 @@ export function Hero() {
           initial={{ opacity: 0, scaleX: 0 }}
           animate={{ opacity: 1, scaleX: 1 }}
           transition={{ duration: 0.8, delay: 0.85, ease: [0.43, 0.13, 0.23, 0.96] }}
-          className="mb-8 flex items-center justify-center gap-5"
+          className="mb-8 flex items-center justify-center gap-3 sm:gap-5"
         >
-          <span className="h-px w-16 bg-gradient-to-r from-transparent to-white/15 sm:w-28" />
-          <div className="flex items-center gap-3">
-            <span className="whitespace-nowrap text-sm font-semibold tracking-widest text-white/80">
+          <span className="hidden h-px w-12 bg-gradient-to-r from-transparent to-white/15 sm:block sm:w-28" />
+          <div className="flex items-center gap-2 sm:gap-3">
+            <span className="whitespace-nowrap text-sm font-semibold tracking-wider text-white/80 sm:tracking-widest">
               {profile.name}
             </span>
             <span className="h-3.5 w-px bg-white/15" />
-            <span className="font-mono text-[11px] tracking-[0.18em] text-indigo-400/80 uppercase">
+            <span className="whitespace-nowrap font-mono text-[10px] tracking-[0.12em] text-indigo-400/80 uppercase sm:text-[11px] sm:tracking-[0.18em]">
               {profile.titleShort}
             </span>
           </div>
-          <span className="h-px w-16 bg-gradient-to-l from-transparent to-white/15 sm:w-28" />
+          <span className="hidden h-px w-12 bg-gradient-to-l from-transparent to-white/15 sm:block sm:w-28" />
         </motion.div>
 
         {/* Sub copy */}
