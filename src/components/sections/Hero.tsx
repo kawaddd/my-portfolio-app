@@ -171,7 +171,7 @@ export function Hero() {
           initial={{ opacity: 0, y: 16 }}
           animate={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.7, delay: 1.1 }}
-          className="flex flex-col items-center justify-center gap-3 sm:flex-row sm:gap-4 pb-28 sm:pb-20"
+          className="flex flex-col items-center justify-center gap-3 sm:flex-row sm:gap-4 pb-10 sm:pb-20"
         >
           <button
             onClick={() =>
