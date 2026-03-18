@@ -149,7 +149,7 @@ export function Contact() {
                   <span className="text-[11px] text-slate-400">週15h以上稼働可</span>
                 </div>
                 <div className="inline-flex items-center gap-1.5 rounded-full border border-white/[0.08] bg-white/[0.03] px-3 py-1.5">
-                  <span className="text-[11px] text-slate-400">24時間以内に返信</span>
+                  <span className="text-[11px] text-slate-400">極力12時間以内に返信</span>
                 </div>
               </div>
 

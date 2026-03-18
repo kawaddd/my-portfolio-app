@@ -20,7 +20,7 @@ export const skillCategories: SkillCategory[] = [
     color: "#818CF8",
     skills: [
       { name: "PHP", level: 90, note: "実務2年以上・設計から実装まで" },
-      { name: "Java", level: 55, note: "現在案件で稼働中" },
+      { name: "Java", level: 70, note: "現在案件で稼働中" },
       { name: "Ruby", level: 60, note: "スクール・独学で習得" },
       { name: "SQL (MySQL / PostgreSQL / Oracle)", level: 80, note: "設計・チューニング・複雑クエリ対応" },
       { name: "Python", level: 50, note: "自動化・スクリプト" },
