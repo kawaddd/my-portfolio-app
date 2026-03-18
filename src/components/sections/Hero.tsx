@@ -37,7 +37,7 @@ export function Hero() {
   return (
     <section
       ref={containerRef}
-      className="relative flex min-h-[100svh] flex-col items-center justify-center overflow-hidden px-5 sm:px-8"
+      className="relative flex min-h-[75svh] sm:min-h-[100svh] flex-col items-center justify-center overflow-hidden px-5 sm:px-8"
     >
       {/* ── 背景レイヤー ── */}
 
