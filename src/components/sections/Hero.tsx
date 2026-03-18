@@ -162,7 +162,7 @@ export function Hero() {
           className="mx-auto mb-12 max-w-md text-sm leading-relaxed text-slate-400 sm:text-base"
         >
           AI・設計・開発の力を統合して、
-          <br className="hidden sm:block" />
+          <br />
           ビジネスの課題を価値に変える。
         </motion.p>
 
