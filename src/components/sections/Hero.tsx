@@ -7,8 +7,6 @@ import { profile } from "@/src/data/profile";
 /* 各行の遅延 */
 const headline = [
   { text: "あなたの「作りたい」を、", gradient: false },
-  { text: "設計から実装・", gradient: false },
-  { text: "運用保守・改善まで", gradient: false },
   { text: "伴走して形にします。", gradient: true },
 ];
 
@@ -118,7 +116,7 @@ export function Hero() {
                   ease: [0.19, 1.0, 0.22, 1.0],
                 }}
                 style={{
-                  fontSize: "clamp(2.1rem, 7vw, 5.0rem)",
+                  fontSize: "clamp(1.75rem, 6.5vw, 5.0rem)",
                   fontWeight: 800,
                   letterSpacing: "-0.03em",
                   lineHeight: 1.1,

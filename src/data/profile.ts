@@ -3,7 +3,7 @@ export const profile = {
   nameEn: "Daiki Kawabata",
   title: "AI活用エンジニア / Webシステム開発",
   titleShort: "Engineer & Creator",
-  tagline: "あなたの「作りたい」を、\n設計から実装・運用保守・改善まで\n伴走して形にします。",
+  tagline: "あなたの「作りたい」を、\n伴走して形にします。",
   taglineEn: "Designing the future at the intersection\nof technology and creativity.",
   bio: [
     "新卒でコンサル営業として「課題を聞き、解決策を設計する」思考を磨いた後、Web開発の世界へ転身。PHP / Vue.js / SQL / AWSを軸にシステム設計から実装・テストまでを一貫して担当してきました。",
