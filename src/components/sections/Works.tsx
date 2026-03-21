@@ -377,7 +377,7 @@ function ProjectModal({ project, onClose }: { project: Project; onClose: () => v
 
           {/* 公開URLがある場合のみ表示 */}
           {project.url && (
-            <div className="mt-8">
+            <div className="mt-8 space-y-3">
               <a
                 href={project.url}
                 target="_blank"
@@ -386,6 +386,17 @@ function ProjectModal({ project, onClose }: { project: Project; onClose: () => v
               >
                 <ExternalLink className="h-4 w-4" /> サイトを見る
               </a>
+              {project.loginInfo && (
+                <div className="rounded-xl border border-white/[0.06] bg-white/[0.03] px-4 py-3">
+                  <p className="mb-2 text-[10px] font-bold tracking-[0.2em] text-slate-500 uppercase">
+                    デモ用ログイン情報
+                  </p>
+                  <div className="space-y-1 font-mono text-xs text-slate-400">
+                    <p>Email&nbsp;&nbsp;&nbsp;: <span className="text-slate-300">{project.loginInfo.email}</span></p>
+                    <p>Password : <span className="text-slate-300">{project.loginInfo.password}</span></p>
+                  </div>
+                </div>
+              )}
             </div>
           )}
         </div>

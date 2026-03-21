@@ -17,6 +17,8 @@ export type Project = {
   url?: string;
   /** 作成時間（あれば） */
   duration?: string;
+  /** ログイン情報（あれば） */
+  loginInfo?: { email: string; password: string };
 };
 
 export const projects: Project[] = [
@@ -102,5 +104,27 @@ export const projects: Project[] = [
     image: "/works/ai-secretary.png",
     url: "https://ai-secretary-app-nu.vercel.app/",
     duration: "10時間程度",
+  },
+  {
+    id: "dental-patient-management",
+    title: "歯科医院向け患者管理システム",
+    titleEn: "Dental Patient Management System",
+    category: "Web Development",
+    tags: ["Claude Code", "PHP", "Laravel", "Tailwind CSS", "Alpine.js", "SQLite", "PostgreSQL", "Docker", "GitHub"],
+    description:
+      "既存の予約管理システムから出力されたCSVデータを取り込み、患者情報の検索・閲覧を効率化する歯科医院向け管理アプリ。",
+    challenge:
+      "既存システムと紙運用が混在し、治療部位ごとの経過など複雑な診療履歴を効率的に管理・検索できていない状況だった。その結果、必要な情報へのアクセスに時間がかかり、ドクターの業務効率を阻害していた。",
+    solution:
+      "既存システムから出力されたCSVデータのインポート機能を実装し、患者・予約情報を一元管理。患者ID・医院・治療内容・治療部位など複数条件での検索機能と、診療履歴の時系列表示を構築した。また、CSV取り込み時はエラー行のみをスキップし内容を明示することで、業務を止めない運用を前提とした設計とした。",
+    outcome:
+      "CSVインポートから検索・履歴閲覧までを一つのUIで完結させ、患者情報へのアクセス効率を向上。非同期検索とフィルター状態の可視化により、ドクターが迷わず操作できる直感的なUXを実現した。さらに、エラー耐性のあるインポート設計により、データ不備があっても業務を止めない実用的なシステムを構築した。",
+    featured: true,
+    status: "completed",
+    year: "2026年3月",
+    image: "/works/gazou.png",
+    url: "https://dental-patient-management.onrender.com/",
+    duration: "10時間程度",
+    loginInfo: { email: "dev@example.com", password: "password123" },
   },
 ];
