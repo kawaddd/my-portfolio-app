@@ -19,6 +19,8 @@ export type Project = {
   duration?: string;
   /** ログイン情報（あれば） */
   loginInfo?: { email: string; password: string };
+  /** 起動に時間がかかる旨のメモ（あれば） */
+  startupNote?: string;
 };
 
 export const projects: Project[] = [
@@ -122,9 +124,10 @@ export const projects: Project[] = [
     featured: true,
     status: "completed",
     year: "2026年3月",
-    image: "/works/gazou.png",
+    image: "/works/dental-patient-management.png",
     url: "https://dental-patient-management.onrender.com/",
     duration: "10時間程度",
     loginInfo: { email: "dev@example.com", password: "password123" },
+    startupNote: "※ アプリの起動に1分ほどかかる場合があります。ご了承ください。",
   },
 ];

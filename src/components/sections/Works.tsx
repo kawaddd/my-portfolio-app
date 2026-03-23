@@ -395,6 +395,9 @@ function ProjectModal({ project, onClose }: { project: Project; onClose: () => v
                     <p>Email&nbsp;&nbsp;&nbsp;: <span className="text-slate-300">{project.loginInfo.email}</span></p>
                     <p>Password : <span className="text-slate-300">{project.loginInfo.password}</span></p>
                   </div>
+                  {project.startupNote && (
+                    <p className="mt-2 text-[11px] text-slate-500">{project.startupNote}</p>
+                  )}
                 </div>
               )}
             </div>
