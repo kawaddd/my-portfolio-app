@@ -52,7 +52,6 @@ export const profile = {
     email: "kwbt614@gmail.com",
   },
   stats: [
-    { label: "年齢", value: "27歳" },
     { label: "エンジニア歴", value: "2年+" },
     { label: "保有AWS資格", value: "4冠" },
     { label: "保有資格 合計", value: "10件" },

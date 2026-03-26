@@ -59,7 +59,10 @@ export function About() {
                 />
               </div>
               <div>
-                <p className="text-lg font-bold text-white/90">{profile.name}</p>
+                <div className="flex items-center gap-2">
+                  <p className="text-lg font-bold text-white/90">{profile.name}</p>
+                  <span className="rounded-full border border-white/[0.08] bg-white/[0.04] px-2 py-0.5 text-[11px] text-slate-400">27歳</span>
+                </div>
                 <p className="mt-0.5 font-mono text-[11px] tracking-[0.18em] text-indigo-400/70 uppercase">{profile.titleShort}</p>
               </div>
             </motion.div>
