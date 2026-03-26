@@ -52,7 +52,7 @@ export const profile = {
     email: "kwbt614@gmail.com",
   },
   stats: [
-    { label: "エンジニア歴", value: "3年+" },
+    { label: "エンジニア歴", value: "2年+" },
     { label: "保有AWS資格", value: "4冠" },
     { label: "保有資格 合計", value: "10件" },
     { label: "AI活用", value: "毎日" },
