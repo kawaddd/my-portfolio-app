@@ -128,6 +128,5 @@ export const projects: Project[] = [
     url: "https://dental-patient-management.onrender.com/",
     duration: "10時間程度",
     loginInfo: { email: "dev@example.com", password: "password123" },
-    startupNote: "※ アプリの起動に1分ほどかかる場合があります。ご了承ください。",
   },
 ];
